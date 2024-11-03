@@ -25,6 +25,7 @@ class LoadTestUser(HttpUser):
         # Mengakses endpoint GET /heavy
         self.client.get("/heavy")
     
+    
     @task(4)
     def get_root(self):
         # Mengakses endpoint GET /
